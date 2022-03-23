@@ -91,3 +91,9 @@ function largest(x,y,z) {
     }
 }
 console.log(largest(5,2,3));
+
+function printTime(){
+    let current= new Date();
+    return `${current.getUTCHours()-4} : ${current.getUTCMinutes()}: ${current.getUTCSeconds()}`;
+}
+console.log(printTime())
