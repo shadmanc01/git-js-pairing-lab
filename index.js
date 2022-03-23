@@ -18,7 +18,7 @@ multiplesofThree();
 function multiplesofThreeorFive(){
     for(let i =1; i<= 100; i++){
         if(i % 3 === 0 || i%5 ===0){
-            console.log(i)
+            console.log(i);
         }
     }
 }
@@ -36,5 +36,16 @@ function multiply(a,b){
     return a*b;
 
 }
-console.log(multiply(2,6))
-multiply(2,6)
+console.log(multiply(2,6));
+multiply(2,6);
+
+function add(x,y) {
+     let sum = x + y
+        if(x === y) {
+            return (sum * 3);
+        } else {
+            return sum;
+        }
+    } 
+
+console.log(add(12,4));
