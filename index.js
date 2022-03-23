@@ -71,10 +71,23 @@ console.log(triangleArea(5,5));
 
 function betweenTwentyAndFourty(num){
     if(num >= 20 && num<=100){
-        return true
+        return true;
     } else{
-        return false
+        return false;
     }
 }
-console.log(betweenTwentyAndFourty(19))
-betweenTwentyAndFourty(21)
+console.log(betweenTwentyAndFourty(19));
+betweenTwentyAndFourty(21);
+
+function largest(x,y,z) {
+    if( x > y && x > z) {
+        return x;
+    }
+    else if(y > x && y > z) {
+        return y;
+    }
+    else { 
+        return z;
+    }
+}
+console.log(largest(5,2,3));
