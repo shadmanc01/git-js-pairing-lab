@@ -110,3 +110,13 @@ function getExtention(string){
     console.log("."+extension)
 }
 getExtention("index.js")
+
+function absoluteNineteen(num) {
+    if( num > 19) {
+        return Math.abs(num-19) *3;
+    }
+    else { 
+        return Math.abs(num - 19);
+}
+}
+console.log(absoluteNineteen(20));
