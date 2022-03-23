@@ -119,4 +119,23 @@ function absoluteNineteen(num) {
         return Math.abs(num - 19);
 }
 }
-console.log(absoluteNineteen(20));
+console.log(absoluteNineteen(19));
+
+function switchLetters(string){
+    let ar= string.split("");
+    let first=ar[0];
+    let second=ar[ar.length-1]
+    ar[0]=second;
+    ar[ar.length-1]=first
+    console.log(ar.join(""));
+}
+switchLetters("hello world")
+
+function changeString(text){
+    for(let i=0;i<text.length; i++){
+        let ch=text[i];
+        ch.charCodeAt(0);
+        String.fromCharCode( 1+64) 
+    }
+}
+console.log(changeString("hello world"))
