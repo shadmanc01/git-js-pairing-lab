@@ -49,3 +49,16 @@ function add(x,y) {
     } 
 
 console.log(add(12,4));
+
+function isNegative(num){
+    if(num > 0){
+        return false
+    }
+    if(num < 0){
+        return true
+    }else{
+        return "number is 0"
+    }
+    
+}
+console.log(isNegative(-1));
