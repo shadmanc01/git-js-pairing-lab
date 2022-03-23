@@ -68,3 +68,13 @@ function triangleArea(h,b) {
 }
 
 console.log(triangleArea(5,5));
+
+function betweenTwentyAndFourty(num){
+    if(num >= 20 && num<=100){
+        return true
+    } else{
+        return false
+    }
+}
+console.log(betweenTwentyAndFourty(19))
+betweenTwentyAndFourty(21)
