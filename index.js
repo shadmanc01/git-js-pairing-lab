@@ -31,3 +31,10 @@ function untilNum(num) {
 }
 
 untilNum(100);
+
+function multiply(a,b){
+    return a*b;
+
+}
+console.log(multiply(2,6))
+multiply(2,6)
