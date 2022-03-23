@@ -91,3 +91,9 @@ function largest(x,y,z) {
     }
 }
 console.log(largest(5,2,3));
+
+function isLeapYear(year) {
+    return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+}
+
+console.log(isLeapYear(2019));
