@@ -104,4 +104,9 @@ function isLeapYear(year) {
 console.log(isLeapYear(2019));
 
 
-
+function getExtention(string){
+    let arr=string.split(".");
+    let extension = arr.pop()
+    console.log("."+extension)
+}
+getExtention("index.js")
