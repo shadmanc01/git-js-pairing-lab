@@ -4,6 +4,7 @@ function fivetoonehunbred(){
         console.log(i);
     }
 }
+console.log("Q1-----------")
 fivetoonehunbred();
 
 function multiplesofThree() {
@@ -13,6 +14,7 @@ function multiplesofThree() {
         }
     }
 }
+console.log("Q2-----------")
 multiplesofThree();
 
 function multiplesofThreeorFive(){
@@ -22,6 +24,7 @@ function multiplesofThreeorFive(){
         }
     }
 }
+console.log("Q3-----------")
 multiplesofThreeorFive();
 
 function untilNum(num) {
@@ -29,13 +32,14 @@ function untilNum(num) {
         console.log(i);
     }
 }
-
-untilNum(100);
+console.log("Q4-----------")
+untilNum(14);
 
 function multiply(a,b){
     return a*b;
 
 }
+console.log("Q5-----------")
 console.log(multiply(2,6));
 multiply(2,6);
 
@@ -47,7 +51,7 @@ function add(x,y) {
             return sum;
         }
     } 
-
+console.log("Q6-----------")
 console.log(add(12,4));
 
 function isNegative(num){
@@ -61,12 +65,13 @@ function isNegative(num){
     }
     
 }
+console.log("Q7-----------")
 console.log(isNegative(-1));
 
 function triangleArea(h,b) {
     return (b*h)/2
 }
-
+console.log("Q8-----------")
 console.log(triangleArea(5,5));
 
 function betweenTwentyAndFourty(num){
@@ -76,6 +81,7 @@ function betweenTwentyAndFourty(num){
         return false;
     }
 }
+console.log("Q9-----------")
 console.log(betweenTwentyAndFourty(19));
 betweenTwentyAndFourty(21);
 
@@ -90,17 +96,20 @@ function largest(x,y,z) {
         return z;
     }
 }
+console.log("Q10-----------")
 console.log(largest(5,2,3));
 
 function printTime(){
     let current= new Date();
     return `${current.getUTCHours()-4} : ${current.getUTCMinutes()}: ${current.getUTCSeconds()}`;
 }
+console.log("Q11-----------")
 console.log(printTime())
 
 function isLeapYear(year) {
     return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
 }
+console.log("Q12-----------")
 console.log(isLeapYear(2019));
 
 
@@ -109,6 +118,7 @@ function getExtention(string){
     let extension = arr.pop()
     console.log("."+extension)
 }
+console.log("Q13-----------")
 getExtention("index.js")
 
 function absoluteNineteen(num) {
@@ -119,26 +129,45 @@ function absoluteNineteen(num) {
         return Math.abs(num - 19);
 }
 }
+console.log("Q14-----------")
+console.log(absoluteNineteen(20));
+
+function switchLetters(str1){
+    if (str1.length <= 1){
+        return str1;
+    }
+    let mid_char = str1.substring(1, str1.length - 1);
+    return (str1.charAt(str1.length - 1)) + mid_char + str1.charAt(0);
+}
+console.log("Q15-----------")
+console.log(switchLetters('Shadman'));
+console.log(switchLetters('Aldair'));
+
 console.log(absoluteNineteen(19));
 
-function switchLetters(string){
-    let ar= string.split("");
-    let first=ar[0];
-    let second=ar[ar.length-1]
-    ar[0]=second;
-    ar[ar.length-1]=first
-    console.log(ar.join(""));
-}
-switchLetters("hello world")
+// function switchLetters(string){
+//     let ar= string.split("");
+//     let first=ar[0];
+//     let second=ar[ar.length-1]
+//     ar[0]=second;
+//     ar[ar.length-1]=first
+//     console.log(ar.join(""));
+// }
+// switchLetters("hello world")
 
 function changeString(text){
     let words=text.split("")
     for(let i=0;i<words.length; i++){
         let ch=words[i];
-        words[i]=String.fromCharCode( ch.charCodeAt(0)+1) 
+        if(ch === " "){
+            words[i]=" ";
+        }else{
+        words[i]=String.fromCharCode( ch.charCodeAt(0)+1) ;
+        }
     
     }
-    words.join("")
-    console.log(words)
+    words.join("");
+    return words.join("")
 }
-console.log(changeString("hello world"))
+console.log("Q16-----------")
+console.log(changeString("abc"))
