@@ -156,11 +156,12 @@ console.log(absoluteNineteen(19));
 // switchLetters("hello world")
 
 function changeString(text){
+    
     let words=text.split("")
     for(let i=0;i<words.length; i++){
         let ch=words[i];
-        if(ch === " "){
-            words[i]=" ";
+        if(!(/[a-zA-Z]/).test(ch)){
+            words[i]=ch;
         }else{
         words[i]=String.fromCharCode( ch.charCodeAt(0)+1) ;
         }
@@ -170,4 +171,4 @@ function changeString(text){
     return words.join("")
 }
 console.log("Q16-----------")
-console.log(changeString("abc"))
+console.log(changeString("hello world"))
