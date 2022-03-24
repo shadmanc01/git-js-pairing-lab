@@ -132,10 +132,13 @@ function switchLetters(string){
 switchLetters("hello world")
 
 function changeString(text){
-    for(let i=0;i<text.length; i++){
-        let ch=text[i];
-        ch.charCodeAt(0);
-        String.fromCharCode( 1+64) 
+    let words=text.split("")
+    for(let i=0;i<words.length; i++){
+        let ch=words[i];
+        words[i]=String.fromCharCode( ch.charCodeAt(0)+1) 
+    
     }
+    words.join("")
+    console.log(words)
 }
 console.log(changeString("hello world"))
